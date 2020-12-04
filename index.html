@@ -20,10 +20,19 @@
     <!-- custom css -->
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body onload="pageLoader()">
+
+    <!-- loader -->
+    <div class="loader-wrapper" id="loader">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <!-- end loader -->
+
+
+    <div id="content" style="display: none;">
     
     <!-- navigation -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="/index.html">Brian<span>&</span>Emma</a>
 
@@ -80,28 +89,24 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="about-inner">
-                        <img src="img/pexels-pixabay-372176.jpg" class="img-fluid">
+                        <img src="img/brian1.jpg" class="img-fluid w-100">
                         <div class="text-center">
                             <h3>Brian</h3>
                             <p>
-                                Hi, I'm Brian,designer, ilustrator.
-                                Love music and adventure."There is only 
+                                Hi, I'm Brian. I love music and adventure.There is only 
                                 one happiness in this life, to love 
-                                and be loved."
+                                and be loved.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="about-inner">
-                        <img src="img/pexels-natasha-fernandez-759668.jpg" alt="" class="img-fluid">
+                        <img src="img/emma1.jpg" alt="" class="img-fluid w-100">
                         <div class="text-center">
                             <h3>Emma</h3>
                             <p>
-                                Hi, I'm Emma,designer, ilustrator.
-                                Love music and adventure."There is only 
-                                one happiness in this life, to love 
-                                and be loved."
+                                Hi, I'm Emma.Life without love is like a tree without blossoms or fruit. The best thing to hold onto in life is each other.
                             </p>
                         </div>
                     </div>
@@ -117,22 +122,22 @@
             <div class="countdown-inner">
                 <h5>We're waiting for...</h5>
                 <h2>The Adventure</h2>
-                <div class="count d-flex mt-5">
+                <div class="count d-flex mt-5" id="count">
                     <div class="item">
-                        <i class="no">00</i>
+                        <i id="day">00</i>
                         <i class="letter">Days</i>
                     </div>
                     <div class="item">
-                        <i class="no">00</i>
-                        <i class="letter">Days</i>
+                        <i id="hour">00</i>
+                        <i class="letter">Hours</i>
                     </div>
                     <div class="item">
-                        <i class="no">00</i>
-                        <i class="letter">Days</i>
+                        <i id="minute">00</i>
+                        <i class="letter">Minutes</i>
                     </div>
                     <div class="item">
-                        <i class="no">00</i>
-                        <i class="letter">Days</i>
+                        <i id="second">00</i>
+                        <i class="letter">Seconds</i>
                     </div>
                 </div>
             </div>
@@ -158,7 +163,7 @@
                         <h6>Wedding Ceremony</h6>
                         <p>
                             Sunday, 6 December 2020 
-                            <br>13:00 PM - 14:00 PM 
+                            <br>10:00 AM - 02:00 PM 
                             <br>Central SDA cHURCH
                         </p>
                         <a href="#" class="btn btn-info">view on map</a>
@@ -171,8 +176,8 @@
                         <h6>Wedding Reception</h6>
                         <p>
                             Sunday, 6 December 2020 
-                            <br>13:00 PM - 14:00 PM 
-                            <br>Central SDA cHURCH
+                            <br>02:00 PM - 07:00 PM 
+                            <br>Naftalis' Gargens & Resort
                         </p>
                         <a href="#" class="btn btn-info">view on map</a>
                     </div>
@@ -248,6 +253,8 @@
         </div>
     </footer>
     <!-- =================== END FOOTER ================ -->
+
+    </div>
     
 
     <!-- JS, Popper.js, and jQuery -->
@@ -256,6 +263,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     
     <!-- custom script -->
-    <script src="script/main.js"></script>
+    <script src="/script/main.js"></script>
 </body>
 </html>
