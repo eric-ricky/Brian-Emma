@@ -3,8 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-
+html {
+    overflow-x: hidden !important;
+}
 body {
     overflow-x: hidden !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -393,7 +396,7 @@ a {
     text-align: center;
 }
 .footer .copy a {
-    color: blue;
+    color: rgb(78, 78, 204);
     cursor: pointer;
 }
 /* =============== END FOOTER ============= */
